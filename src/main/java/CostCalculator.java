@@ -1,6 +1,13 @@
-public class CostCalculator {
+import java.math.BigDecimal;
 
-    public double calculate(String[] texts){
+public class CostCalculator {
+    private double unitPrice;
+
+    CostCalculator(double unitPrice){
+        this.unitPrice = unitPrice;
+    }
+
+    public double calculate(int lenght){
         return 0.0;
     }
 }
