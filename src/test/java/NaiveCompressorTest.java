@@ -1,1 +1,2 @@
-public class NaiveCompressorTest {}
+public class NaiveCompressorTest {
+}

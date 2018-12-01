@@ -1,1 +1,6 @@
-public class CostCalculator {    public double calculate(String[] texts){        return 0.0;    }}
+public class CostCalculator {
+
+    public double calculate(String[] texts){
+        return 0.0;
+    }
+}
