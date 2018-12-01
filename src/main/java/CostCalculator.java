@@ -1,11 +1,13 @@
-public class CostCalculator {
-    private double unitPrice;
+import java.math.BigDecimal;
 
-    CostCalculator(double unitPrice){
-        this.unitPrice = unitPrice;
+public class CostCalculator {
+    private static final BigDecimal UNIT_PRICE;
+
+    CostCalculator(BigDecimal unitPrice){
+        UNIT_PRICE = unitPrice;
     }
 
-    public double calculate(int lenght){
-        return 0.0;
+    public BigDecimal calculate(int lenght){
+        return null;
     }
 }

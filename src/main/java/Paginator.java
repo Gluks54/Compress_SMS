@@ -1,8 +1,8 @@
 public class Paginator {
-    private int lenght;
+    private static final int SMS_LENGHT;
 
     Paginator(int lenght){
-        this.lenght = lenght;
+        SMS_LENGHT = lenght;
     }
 
     public String[] paginate(String text){
