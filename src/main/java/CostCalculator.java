@@ -1,11 +1,11 @@
 public class CostCalculator {
-    private double unitPrice;
+    private static final Decimal UNIT_PRICE;
 
-    CostCalculator(double unitPrice){
-        this.unitPrice = unitPrice;
+    CostCalculator(Decimal unitPrice){
+        UNIT_PRICE = unitPrice;
     }
 
-    public double calculate(int lenght){
-        return 0.0;
+    public Decimal calculate(int lenght){
+        return Decimal(0.0);
     }
 }
