@@ -16,8 +16,4 @@ public class OptimalCompressor implements Compressor {
         String uncompressedString = smaz.decompress(temp);
         return uncompressedString;
     }
-//    @Override
-//    public String decompress(String text) {
-//        return smaz.decompress(text.getBytes(StandardCharsets.ISO_8859_1));
-//    }
 }
