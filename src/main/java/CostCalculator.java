@@ -1,13 +1,16 @@
 import java.math.BigDecimal;
 
 public class CostCalculator {
-    private static final BigDecimal UNIT_PRICE;
+    private  final BigDecimal UNIT_PRICE;
 
     CostCalculator(BigDecimal unitPrice){
-        UNIT_PRICE = unitPrice;
+         this.UNIT_PRICE = unitPrice;
     }
 
-    public BigDecimal calculate(int lenght){
-        return null;
+    public BigDecimal calculate(int part)throws IllegalArgumentException {
+        if(part < 0){
+            throw new IllegalArgumentException();
+        }
+        return  UNIT_PRICE.multiply(new BigDecimal(part));
     }
 }

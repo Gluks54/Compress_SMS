@@ -1,1 +1,1 @@
-###This is a project for compressing text messages.
+###This is a project for compressing text messages.Program consist two methods for comressing and CostCalculator;
