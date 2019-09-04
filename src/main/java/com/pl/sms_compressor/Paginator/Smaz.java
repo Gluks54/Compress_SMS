@@ -1,4 +1,4 @@
-/*
+package com.pl.sms_compressor.Paginator;/*
    Copyright 2011 icedrake
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -15,11 +15,12 @@
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.*;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.nio.CharBuffer;
 
 /**
- * Smaz class for compression small strings. Port to java from <a href="https://github.com/antirez/smaz/">antirez</a>
+ * com.pl.sms_compressor.Paginator.Smaz class for compression small strings. Port to java from <a href="https://github.com/antirez/smaz/">antirez</a>
  * This class is immutable.
  *
  * @author icedrake
@@ -118,7 +119,6 @@ public class Smaz {
         CharBuffer charBuffer = CharBuffer.wrap(inString);
         int inlen;
 
-        // loop through input looking for matches in codebook
         while ((inlen = charBuffer.remaining()) > 0) {
             int h1, h2, h3;
             charBuffer.mark();
@@ -253,5 +253,4 @@ public class Smaz {
         }
         return out.toString();
     }
-
 }

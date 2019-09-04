@@ -1,13 +1,16 @@
-import Compressor.Compressor;
+package com.pl.sms_compressor.Compressors;
+
+import com.pl.sms_compressor.Paginator.Smaz;
 
 import java.nio.charset.StandardCharsets;
 
 public class OptimalCompressor implements Compressor {
     Smaz smaz = new Smaz();
+
     @Override
     public String compress(String text) {
         byte[] compressed = smaz.compress(text);
-        return new String(compressed,StandardCharsets.ISO_8859_1);
+        return new String(compressed, StandardCharsets.ISO_8859_1);
     }
 
     @Override

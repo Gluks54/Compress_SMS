@@ -1,10 +1,9 @@
-package Compressor;
+package com.pl.sms_compressor.Compressors;
 
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
 public class NaiveCompressor implements Compressor {
-
 
     @Override
     public String compress(String text) {
